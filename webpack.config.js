@@ -25,5 +25,10 @@ module.exports = {
                 type: 'asset/resource',
             },
         ],
+        mode: 'development',
+        devtool: 'inline-source-map',
+        devServer: {
+            contentBase: './dist',
+        },
     },
 };

@@ -6,8 +6,25 @@
     <title>ToDo List</title>
   </head>
   <body>
-    <h1>My List</h1>
-    <div idlea="side-menu"></div>
-    <div idlea="dashboard"></div>
+    <div class="container">
+      <aside class="side-bar">
+        <h1>My List</h1>
+        <form id="addProjectForm">
+        <button id="todoInput" type="submit">+ New Project</button>
+      </form>
+      </aside>
+    <main class="dashboard">
+      <header>
+        <h1>List Title</h1>
+        <button class="edit-list-btn">Edit</button>
+        <button class="delete-list-btn">Delete</button>
+      </header>
+      <section class="task-form">
+        <form id="taskForm">
+          <button id="addTask" type="submit">+ Task</button>
+        </form>
+      </section>
+      <section class="task-list"></section>
+    </main>
   </body>
 </html>
