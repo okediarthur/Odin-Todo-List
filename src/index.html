@@ -8,29 +8,61 @@
   <body>
     <div class="container">
       <aside class="side-bar">
-        <h1>My List</h1>
-        <form class="addProjectForm">
-          <button id="todoInput" type="submit">+ New Project</button>
-        </form>
+        <h1>Tasks</h1>
+        <button id="todoInput" type="submit">+ New Project</button>
+        <div class="popup-container" id="popupContainer" style="display: none">
+          <form class="addProjectForm">
+            <h3>Title</h3>
+            <input
+              type="text"
+              id="projectTitle"
+              placeholder="Project Title"
+              required
+            />
+            <h3>Description</h3>
+            <input
+              type="text"
+              id="projectDescription"
+              placeholder="Project Description"
+            />
+            <button type="text" id="cancelButton">Cancel</button>
+            <button type="text" id="submitButton">Submit</button>
+          </form>
+        </div>
       </aside>
       <main class="dashboard">
         <header>
-          <h1>List Title</h1>
+          <h1></h1>
           <div class="menu">
-          <button class="menu-btn">
-            <span class="dot"></span>
-            <span class="dot"></span>
-            <span class="dot"></span>
-          </button>
-          <div class="menu-content">
-          <button class="edit-list-btn">Edit</button>
-          <button class="delete-list-btn">Delete</button>
+            <button class="menu-btn">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </button>
+            <div class="menu-content">
+              <button class="edit-list-btn">Edit</button>
+              <button class="delete-list-btn">Delete</button>
+            </div>
           </div>
-        </div>
         </header>
         <section class="task-form">
-          <form id="taskForm">
-            <button id="addTask" type="submit">+ Task</button>
+          <button id="addTask" type="submit">+ Task</button>
+          <form id="taskForm" class="addTaskForm" style="display: none">
+            <input
+              type="text"
+              id="taskTitle"
+              placeholder="Task Title"
+              required
+            />
+            <input type="text" id="taskNotes" placeholder="Notes" />
+            <input type="date" id="dueDate" />
+            <select id="priority">
+              <option value="low">Low</option>
+              <option value="medium">Medium</option>
+              <option value="high">High</option>
+            </select>
+            <button type="button" id="cancelTaskBtn">Cancel</button>
+            <button type="submit">Add Task</button>
           </form>
         </section>
         <section class="task-list"></section>

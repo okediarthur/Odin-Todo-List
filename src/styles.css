@@ -91,6 +91,53 @@ header {
     cursor: pointer;
 }
 
+.popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border: 1px solid #0c343d;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.popup-container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.popup-container h3{
+    margin-top: 10px;
+    color: #0c343d;
+}
+
+.popup-container input{
+    margin-bottom: 10px;
+}
+
+.popup-container button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0c343d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.side-bar button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #0c343d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .task-form{
     margin-bottom: 20px;
 }
@@ -113,4 +160,5 @@ header {
     border: 1px solid #ccc;
     border-radius: 5px;
     padding: 20px;
+    
 }
