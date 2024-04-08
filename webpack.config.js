@@ -1,4 +1,4 @@
-const path = require('path');
+const path  = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
@@ -25,10 +25,10 @@ module.exports = {
                 type: 'asset/resource',
             },
         ],
-        mode: 'development',
-        devtool: 'inline-source-map',
-        devServer: {
-            contentBase: './dist',
-        },
+    },
+    mode: 'development',
+    devtool: 'inline-source-map',
+    devServer:{
+        contentBase: './dist',
     },
 };
