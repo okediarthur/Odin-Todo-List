@@ -1,4 +1,4 @@
 import './styles.css';
-import { intialiseNewProject } from './newProject';
+import { intialiseNewProject, displayTask } from './newProject';
 
 intialiseNewProject();
