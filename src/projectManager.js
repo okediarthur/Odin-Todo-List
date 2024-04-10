@@ -1,12 +1,14 @@
+import { createNewProject } from "./newProject";
+
 //Function to create default Projects
 
-function createDefaultProjects(){
+export function createDefaultProjects(){
     const defaultProjectsData = [
         { title: "Being Awesome", description: "Always remember to smile."},
     { title: "Always Smile", description: "Remember to be nice."},
     ]
     defaultProjectsData.forEach(projectData => {
-        const project = createProject(projectData.title, projectData.description);
+        const project = createNewProject(projectData.title, projectData.description);
         addProjectToSidebar(project);
     });
 };
