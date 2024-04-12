@@ -1,5 +1,5 @@
 import './styles.css';
-import { intialiseNewProject, displayTask } from './newProject';
+import { displayTask } from './newProject';
 import { createDefaultProjects } from './projectManager';
 
 
